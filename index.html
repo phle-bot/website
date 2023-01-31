@@ -61,7 +61,7 @@
             font-size: 24px;
             position: absolute;
             width: 40vw;
-            color: white;
+            color: var(--sanguine);
             top: 4vh;
             font-weight: bolder;
             right: 3vw;
@@ -72,10 +72,11 @@
 
         #tagline {
             position: absolute;
-            top: 70vh;
-            left: 10vw;
+            top: 75vh;
+            left: 8vw;
             width: 50vw;
             font-size: 48px;
+            color: white;
         }
 
         #masthead {
@@ -105,7 +106,7 @@
             width: 30vw;
             background-color: white;
             border-radius: 5px;
-            border: 2px solid black;
+            border: 2px solid var(--dark-red);
         }
     </style>
     <style>
@@ -117,6 +118,9 @@
 <body>
 
     <div id="masthead">
+        <img src="pexels-karolina-grabowska-4047146.jpg" alt=""
+            style="z-index: -1; position: relative; top: 10vh; left: 60px; border-radius: 10px; object-fit: cover;"
+            width="1800px" height="900px">
         <div id="header">
             <div id="logo"><img src="logo.png" alt=""></div>
             <div id="links">
@@ -163,13 +167,14 @@
         <div id="team"
             style="width: 80vw; display: grid; grid-template-columns: auto auto; column-gap: 5vw;position: relative; left: 10vw;">
             <div class="member">
-                <img src="https://dummyimage.com/300/fff/aaa" style="border-radius: 10px; ">
+                <img src="jenny.jpg" width="300" height="300" style="border-radius: 10px; object-fit: cover;">
                 <div class=" card team-member">
                     <div class="team-member-content"
                         style="position: relative; display: flex; flex-direction: column; align-items: left; margin-left: 150px; padding-top: 3vh;">
-                        <div class="name">John Doe</div>
+                        <div class="name">Eric Jenny</div>
                         <br>
-                        <div class="desc">John Doe is a lorem ipsum dolor sit amet consequitor</div>
+                        <div class="desc">Eric is a fourth-year undergraduate in ECE. His responsibilities include .
+                        </div>
                     </div>
 
                 </div>
@@ -179,9 +184,10 @@
                 <div class=" card team-member">
                     <div class="team-member-content"
                         style="position: relative; display: flex; flex-direction: column; align-items: left; margin-left: 150px; padding-top: 3vh;">
-                        <div class="name">John Doe</div>
+                        <div class="name">Kevin Liu</div>
                         <br>
-                        <div class="desc">John Doe is a lorem ipsum dolor sit amet consequitor</div>
+                        <div class="desc">Kevin is a fourth-year undergraduate in ECE. His responsibilities included
+                            developing software for the vein perception system.</div>
                     </div>
 
                 </div>
@@ -191,21 +197,23 @@
                 <div class=" card team-member">
                     <div class="team-member-content"
                         style="position: relative; display: flex; flex-direction: column; align-items: left; margin-left: 150px; padding-top: 3vh;">
-                        <div class="name">John Doe</div>
+                        <div class="name">Srividya Gandikota</div>
                         <br>
-                        <div class="desc">John Doe is a lorem ipsum dolor sit amet consequitor</div>
+                        <div class="desc">Srividya is a fourth-year undergraduate in Mechanical Engineering. Her
+                            responsibilities included</div>
                     </div>
 
                 </div>
             </div>
             <div class="member">
-                <img src="https://dummyimage.com/300/fff/aaa" style="border-radius: 10px;">
+                <img src="nimako.jpg" width="300" height="300" style="border-radius: 10px; object-fit: cover;">
                 <div class=" card team-member">
                     <div class="team-member-content"
                         style="position: relative; display: flex; flex-direction: column; align-items: left; margin-left: 150px; padding-top: 3vh;">
-                        <div class="name">John Doe</div>
+                        <div class="name">Sidney Nimako</div>
                         <br>
-                        <div class="desc">John Doe is a lorem ipsum dolor sit amet consequitor</div>
+                        <div class="desc">Sidney is a fourth-year undergraduate in Mechanical Engineering. His
+                            responsibilities included</div>
                     </div>
 
                 </div>
