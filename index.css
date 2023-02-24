@@ -22,12 +22,54 @@ a {
     text-decoration: inherit;
 }
 
-#problem,
-#our-device {
+#content {
     display: grid;
+    width: 89vw;
     grid-template-columns: auto 80vw;
     column-gap: 2vw;
+    padding: 4vmin;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+
+#backing {
+    /* background-color: #af6469; */
+    background-color: #f3f3f3;
+    background: rgb(254, 254, 254);
+    background: linear-gradient(180deg,
+            rgba(254, 254, 254, 1) 0%,
+            #f3f3f3 5%,
+            #f3f3f3 95%,
+            rgba(254, 254, 254, 1) 100%);
+    padding: 3vw;
+    width: 100vw;
+}
+
+
+#our-team {
+    padding: 10px 60px;
+}
+
+#team {
+    width: 80vw;
+    display: grid;
+    padding-left: 60px;
+    padding-right: 60px;
+    grid-template-columns: auto auto;
+    column-gap: 10vw;
+}
+
+/* #problem,
+#our-device {
+    padding-left: 60px;
+    display: grid;
+    grid-template-columns: auto 80vw;
+    
     height: 100vh;
+    background-color: #660708;
+    color: var(--white);
+    border: 60px solid var(--white);
 }
 
 
@@ -37,7 +79,8 @@ a {
 .content>h1 {
     text-align: center;
     font-size: 48px;
-}
+    border-radius: 10px;
+} */
 
 .member {
     width: 20vw;
@@ -164,6 +207,7 @@ iframe {
     grid-template-columns: 20vw 20vw 20vw;
     align-content: center;
     align-items: center;
+    background-color: #f3f3f3;
 }
 
 #ilrs>a {
