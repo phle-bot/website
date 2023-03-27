@@ -10,6 +10,155 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400&display=swap');
 
+
+@media only screen and (max-width: 780px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+    #header>div {
+        flex: none;
+        width: 100vw;
+        justify-content: center;
+
+    }
+
+
+    #links {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #links>a {
+        flex: none;
+        /* width: 100vw; */
+    }
+
+    #logo {
+        height: 15vh;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    #logo>img {
+        height: 15vh;
+        width: auto;
+    }
+
+
+    #team {
+        width: 80vw;
+        display: grid;
+        padding-left: 60px;
+        padding-right: 60px;
+        grid-template-columns: auto;
+        column-gap: 10vw;
+    }
+
+    .team-member {
+        position: relative;
+        top: -15vh;
+        left: 180px;
+        height: 20vh;
+        width: 60vw;
+        background-color: white;
+        border-radius: 5px;
+        border: 2px solid var(--dark-red);
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+
+
+@media only screen and (min-width: 780px) {
+    #header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #header>div {
+        flex: 1;
+    }
+
+    #links {
+        font-size: larger;
+        position: relative;
+        width: 100px;
+        color: var(--sanguine);
+        top: 60px;
+        font-weight: bolder;
+        left: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: safe;
+    }
+
+    #links>a {
+        padding: 0 4vw;
+    }
+
+    #team {
+        width: 80vw;
+        display: grid;
+        padding-left: 60px;
+        padding-right: 60px;
+        grid-template-columns: auto auto;
+        column-gap: 10vw;
+    }
+
+    .team-member {
+        position: relative;
+        top: -15vh;
+        left: 180px;
+        height: 20vh;
+        width: 30vw;
+        background-color: white;
+        border-radius: 5px;
+        border: 2px solid var(--dark-red);
+    }
+
+    #content {
+        grid-template-columns: auto 80vw;
+        column-gap: 0;
+    }
+
+    #logo>img {
+        height: auto;
+        width: 15vw;
+        position: relative;
+        top: -3vh;
+        left: 8vh;
+    }
+}
+
+
+
+/* Default styling */
+#links {
+    font-size: large;
+    position: relative;
+    color: var(--sanguine);
+    font-weight: bolder;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -25,7 +174,6 @@ a {
 #content {
     display: grid;
     width: 89vw;
-    grid-template-columns: auto 80vw;
     column-gap: 2vw;
     padding: 4vmin;
     background-color: var(--white);
@@ -51,13 +199,18 @@ a {
     padding: 10px 60px;
 }
 
-#team {
-    width: 80vw;
-    display: grid;
-    padding-left: 60px;
-    padding-right: 60px;
-    grid-template-columns: auto auto;
-    column-gap: 10vw;
+
+
+#masthead>img {
+    z-index: -1;
+    position: relative;
+    top: 10vh;
+    left: 5vh;
+    margin: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 95%;
+    height: 92vh;
 }
 
 /* #problem,
@@ -82,30 +235,21 @@ a {
     border-radius: 10px;
 } */
 
+
 .member {
     width: 20vw;
 }
 
 #logo>a>img {
-    z-index: 1;
+    /* z-index: 1; */
     position: absolute;
     top: -3vh;
     left: 5vw;
-    width: 14vw;
+    height: auto;
+    max-width: 300px;
 }
 
-#links {
-    font-size: 24px;
-    position: absolute;
-    width: 40vw;
-    color: var(--sanguine);
-    top: 4vh;
-    font-weight: bolder;
-    right: 3vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 
 #links>a {
     color: var(--sanguine);
@@ -116,7 +260,7 @@ a {
     top: 75vh;
     left: 8vw;
     width: 50vw;
-    font-size: 48px;
+    font-size: 4vh;
     color: white;
 }
 
@@ -139,7 +283,7 @@ a {
     position: relative;
 }
 
-.team-member {
+/* .team-member {
     position: relative;
     top: -15vh;
     left: 180px;
@@ -148,7 +292,7 @@ a {
     background-color: white;
     border-radius: 5px;
     border: 2px solid var(--dark-red);
-}
+} */
 
 #brainstorming {
     margin-top: 15vh;
