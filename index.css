@@ -21,7 +21,7 @@
         left: 0;
         padding: 0;
         margin: 0;
-        width: 100vw;
+        width: 90vw;
     }
 
     #header>div {
@@ -57,6 +57,7 @@
     #logo>img {
         height: 15vh;
         width: auto;
+        z-index: 1;
     }
 
 
@@ -101,7 +102,8 @@
     #links {
         font-size: larger;
         position: relative;
-        width: 100px;
+        /* width: 100px; */
+        max-width: 50vw;
         color: var(--sanguine);
         top: 60px;
         font-weight: bolder;
@@ -212,6 +214,67 @@ a {
     width: 95%;
     height: 92vh;
 }
+
+
+.subtitle {
+
+    font-size: 40px;
+}
+
+#architecture {
+    background-color: #f3f3f3;
+    background: rgb(254, 254, 254);
+    background: linear-gradient(180deg,
+            rgba(254, 254, 254, 1) 0%,
+            #f3f3f3 5%,
+            #f3f3f3 95%,
+            rgba(254, 254, 254, 1) 100%);
+}
+
+#architecture>img {
+    max-width: 80vw;
+    object-fit: contain;
+}
+
+#architecture>p {
+    max-width: 70vw;
+
+}
+
+.grid-layout {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry;
+    grid-gap: 1px;
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+    padding: 1px;
+    margin: 10px;
+
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    /* color: #000; */
+    /* background-color: #ccc; */
+    border-radius: 15px;
+    /* max-width: 100%; */
+}
+
+.grid-item>img {
+    object-fit: contain;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
 
 /* #problem,
 #our-device {
@@ -343,7 +406,10 @@ iframe {
     /* top: 10vh; */
 }
 
-#po {}
+#prototypes-container {
+    color: white;
+    background-color: black;
+}
 
 #misc {
     margin-top: 4vh;

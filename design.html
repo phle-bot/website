@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <a id="logo" href="/website/index.html"><img src="logo.png" alt=""></a>
+        <div id="links" class="" pure-g>
+            <a class="pure-u-1-4 pure-sm-1" href=" #architecture">Architecture</a>
+            <a class="pure-u-1-4 pure-sm-1" href="#prototypes">Prototypes</a>
+            <!-- <a class="pure-u-1-4 pure-sm-1" href="/website/#our-team">Our Team</a> -->
+            <!-- <a class="pure-u-1-4 pure-sm-1" href="/website/documents.html">Documents</a> -->
+
+        </div>
+    </div>
+
+    <div id="architecture" style=" display: flex; align-items: center; flex-direction: column;">
+        <h1 class="subtitle">Architecture</h1>
+        <img src="Subsystems Diagram.jpg" alt="">
+        <h2>Functional Architecture</h2>
+        <p>There are 4 main subsystems involved in the operation of the Phlebot system: Perception, Planning/Control and
+            Actuation. The perception system runs a neural network on an NVIDIA Jetson Nano. The network takes input
+            images from a RGB MIPI camera and segments the image to detect veins. The planning/control subsystem takes
+            these classifications and uses them to determine where to move to next and whether to enter the next phase
+            of operation. The actuation subsytem controls the various pneumatics and steppers used within the system.
+        </p>
+        <img src="Blank diagram (1).png" alt="">
+        <h2>Electronics Architecture</h2>
+        <p>The electronics architecute shows the connections between the various components to transfer power and data.
+            All componentsrely on a central 12 V power supply. This feeds directly into the Stepper and solenoid
+            drivers, while the Jetson gets this power after it is fed through a 5V buck-converter to drop to an
+            appropriate operating voltage. The three stepper motors are connected to the 3D printer driver board, a Big
+            Tree Tech SKR Pico, using standard MOLEC connectors. The Jetson serves as the main computer and communicates
+            with the peripheral Arduino and printer control board using Serial over USB.</p>
+    </div>
+    <div id="prototypes-container">
+        <h1 class="subtitle" style="margin-left: 10vw; padding-top: 2vh;">Prototypes</h1>
+        <div id="prototypes" style="width: 90vw; position: relative; left: 5vw;">
+
+            <div class="grid-layout">
+                <figure class="grid-item">
+                    <img src="Injection Mk II.jpg" alt="">
+                    <h2>Injection Toolhead Mk II</h2>
+                </figure>
+
+                <figure class="grid-item">
+                    <img src="Clamping Arm.jpg" alt="">
+                    <h2>Flexible Clamping Arm</h2>
+                </figure>
+
+                <figure class="grid-item">
+                    <img src="Bowden.jpg" alt="">
+                    <h2>Toolhead Carriage</h2>
+                </figure>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
