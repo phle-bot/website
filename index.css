@@ -425,3 +425,14 @@ iframe {
     text-decoration: underline;
 
 }
+
+#proposal,
+#midsemester {
+    background-color: #f3f3f3;
+    background: rgb(254, 254, 254);
+    background: linear-gradient(180deg,
+            rgba(254, 254, 254, 1) 0%,
+            #f3f3f3 5%,
+            #f3f3f3 95%,
+            rgba(254, 254, 254, 1) 100%);
+}
